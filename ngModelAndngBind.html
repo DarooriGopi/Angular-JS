@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title> Hello from angular JS </title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css" /> 
+</head>
+<style>
+
+</style>
+<script lang="javascript" src="angular.js"></script>
+<script lang="javascript" src="ngStudent.js"></script>
+<script lang="javascript">
+    
+</script>
+
+<body ng-app="myStudentModule">
+        <div ng-controller="myStudentController">
+            <div class="page-header text-center">
+                <h1><b>{{msg}}</b></h1> 
+            </div>
+            <br/>
+            <form class="form-horizontal pull-left">
+                    <div class="form-group " row>
+                        <label class="control-label col-sm-2 " for="name"> Name </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" ng-model="name" placeholder="Enter name"> </div>
+                    </div>
+                <div class="form-group" row>
+                    <label class="control-label col-sm-2 " for="rollno">RollNo:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" ng-model="RollNo" placeholder="Enter RollNo"> </div>
+                </div>
+                <div><b>Hello </b>{{name}} <b>Your Roll Number is:</b> {{RollNo}}</div> 
+                <span ng-bind="name"></span> 
+                <span ng-bind="RollNo"></span>
+        
+        </div>
+        
+    
+</body>
+
+</html>
