@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title> Hello from angular JS </title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css" />
+    <!--    <img class="img-responsive" src="sis.png" alt="Chania">--></head>
+<style>
+    .myimage {
+        background: transparent url("b.jpg") no-repeat top center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: 100%;
+        height: 500px;
+    }
+</style>
+<script lang="javascript" src="angular.js"></script>
+<script lang="javascript" src="studentInformationSystem.js"></script>
+<script lang="javascript">
+</script>
+
+<body ng-app="studentModule" class="myimage">
+    <div ng-controller="studentController">
+        <div class="page-header text-center" style="color:darkblue">
+            <h1><b style="font-family: cursive;">{{msg}}</b></h1> </div>
+        <br/>
+        <form class="form-horizontal pull-left">
+            <div class="form-group row">
+                <label class="control-label col-sm-3 " for="name"> Name:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" ng-model="name" placeholder="Enter name"> </div>
+            </div>
+            <div class="form-group row" >
+                <label class="control-label col-sm-3 " for="rollno">RollNo:</label>
+                <div class="col-sm-9">
+                    <input type="number" class="form-control" ng-model="RollNo" placeholder="Enter RollNo"> </div>
+            </div>
+            <form class="form-horizontal">
+                <div class="form-group row" >
+                    <label class="control-label col-sm-2 " for="Marks">Marks</label>
+                </div>
+                <div class="form-group row" >
+                    <label class="control-label col-sm-3 " for="maths">Maths:</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" ng-model="maths" placeholder="Enter maths marks"> </div>
+                </div>
+                <div class="form-group row" >
+                    <label class="control-label col-sm-3 " for="english">English: </label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" ng-model="english" placeholder="Enter english marks"> </div>
+                </div>
+                <div class="form-group row" >
+                    <label class="control-label col-sm-3 " for="science">Science: </label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" ng-model="science" placeholder="Enter science marks"> </div>
+                </div>
+                <div class="form-group row" >
+                    <label class="control-label col-sm-3 " for="hindi">Hindi:</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" ng-model="hindi" placeholder="Enter hindi marks"> </div>
+                </div>
+                <div><b>Hello </b>{{name}} <b>Your Roll Number is:</b> {{RollNo}}</div>
+                <br/>
+                <div><b>Your Maths Marks are:</b> {{maths}}</div>
+                <br/>
+                <div><b>Your English Marks are:</b> {{english}}</div>
+                <br/>
+                <div><b>Your Science Marks are:</b> {{science}}</div>
+                <br/>
+                <div><b>Your Hindi Marks are:</b> {{hindi}}</div>
+            </form>
+        </form>
+    </div>
+</body>
+
+</html>
